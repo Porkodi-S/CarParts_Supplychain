@@ -1,0 +1,115 @@
+{
+	"compiler": {
+		"version": "0.5.0+commit.1d4f565a"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"constant": false,
+				"inputs": [
+					{
+						"name": "account",
+						"type": "address"
+					}
+				],
+				"name": "addCarParts_Distributor",
+				"outputs": [],
+				"payable": false,
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"constant": false,
+				"inputs": [],
+				"name": "renounceCarParts_Distributor",
+				"outputs": [],
+				"payable": false,
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"constant": true,
+				"inputs": [
+					{
+						"name": "account",
+						"type": "address"
+					}
+				],
+				"name": "isCarParts_Distributor",
+				"outputs": [
+					{
+						"name": "",
+						"type": "bool"
+					}
+				],
+				"payable": false,
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"payable": false,
+				"stateMutability": "nonpayable",
+				"type": "constructor"
+			},
+			{
+				"anonymous": false,
+				"inputs": [
+					{
+						"indexed": true,
+						"name": "account",
+						"type": "address"
+					}
+				],
+				"name": "CarParts_DistributorAdded",
+				"type": "event"
+			},
+			{
+				"anonymous": false,
+				"inputs": [
+					{
+						"indexed": true,
+						"name": "account",
+						"type": "address"
+					}
+				],
+				"name": "CarParts_DistributorRemoved",
+				"type": "event"
+			}
+		],
+		"devdoc": {
+			"methods": {}
+		},
+		"userdoc": {
+			"methods": {}
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"contracts/SCaccesscontrol/CarParts_DistributorRole.sol": "CarParts_DistributorRole"
+		},
+		"evmVersion": "byzantium",
+		"libraries": {},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"contracts/SCaccesscontrol/CarParts_DistributorRole.sol": {
+			"keccak256": "0xa3ce31630edb1ba0f299a8b8aa21af038e13b3b7824cdd5473f92b015f70c50a",
+			"urls": [
+				"bzzr://65f3d89ee024ed14ef4c5b285f7c9379dfe83a2a10d40d4ae4180dcc27e6f96a"
+			]
+		},
+		"contracts/SCaccesscontrol/Roles.sol": {
+			"keccak256": "0x3e82251c67c17585b2356f3a16c6367bf0082d152d878b46a6a060e9febdf457",
+			"urls": [
+				"bzzr://b6b176abc4c65d1b1190c79f225948f71b8f3df1d012e09700938c2c556d408e"
+			]
+		}
+	},
+	"version": 1
+}

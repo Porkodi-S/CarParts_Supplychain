@@ -1,0 +1,945 @@
+{
+	"compiler": {
+		"version": "0.5.0+commit.1d4f565a"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"constant": true,
+				"inputs": [
+					{
+						"name": "_upc",
+						"type": "uint256"
+					}
+				],
+				"name": "fetchitemHistory",
+				"outputs": [
+					{
+						"name": "blockCarParts_ManufacturerToCarParts_Distributor",
+						"type": "uint256"
+					},
+					{
+						"name": "blockCarParts_DistributorToRetailer",
+						"type": "uint256"
+					},
+					{
+						"name": "blockRetailerToCustomer",
+						"type": "uint256"
+					}
+				],
+				"payable": false,
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"constant": false,
+				"inputs": [
+					{
+						"name": "account",
+						"type": "address"
+					}
+				],
+				"name": "addCarParts_Distributor",
+				"outputs": [],
+				"payable": false,
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"constant": false,
+				"inputs": [
+					{
+						"name": "_upc",
+						"type": "uint256"
+					}
+				],
+				"name": "shippedItemByCarParts_Manufacturer",
+				"outputs": [],
+				"payable": true,
+				"stateMutability": "payable",
+				"type": "function"
+			},
+			{
+				"constant": false,
+				"inputs": [
+					{
+						"name": "_upc",
+						"type": "uint256"
+					},
+					{
+						"name": "_price",
+						"type": "uint256"
+					}
+				],
+				"name": "sellItemByCarParts_Manufacturer",
+				"outputs": [],
+				"payable": false,
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"constant": false,
+				"inputs": [
+					{
+						"name": "_upc",
+						"type": "uint256"
+					}
+				],
+				"name": "purchaseItemByRetailer",
+				"outputs": [],
+				"payable": true,
+				"stateMutability": "payable",
+				"type": "function"
+			},
+			{
+				"constant": true,
+				"inputs": [
+					{
+						"name": "account",
+						"type": "address"
+					}
+				],
+				"name": "isCustomer",
+				"outputs": [
+					{
+						"name": "",
+						"type": "bool"
+					}
+				],
+				"payable": false,
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"constant": false,
+				"inputs": [
+					{
+						"name": "_upc",
+						"type": "uint256"
+					}
+				],
+				"name": "receivedItemByCarParts_Distributor",
+				"outputs": [],
+				"payable": false,
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"constant": false,
+				"inputs": [
+					{
+						"name": "_upc",
+						"type": "uint256"
+					}
+				],
+				"name": "receivedItemByRetailer",
+				"outputs": [],
+				"payable": false,
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"constant": false,
+				"inputs": [
+					{
+						"name": "account",
+						"type": "address"
+					}
+				],
+				"name": "addCarParts_Manufacturer",
+				"outputs": [],
+				"payable": false,
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"constant": false,
+				"inputs": [],
+				"name": "kill",
+				"outputs": [],
+				"payable": false,
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"constant": false,
+				"inputs": [
+					{
+						"name": "_upc",
+						"type": "uint256"
+					},
+					{
+						"name": "_originFactoryName",
+						"type": "string"
+					},
+					{
+						"name": "_originFactoryInformation",
+						"type": "string"
+					},
+					{
+						"name": "_originFactoryLatitude",
+						"type": "string"
+					},
+					{
+						"name": "_originFactoryLongitude",
+						"type": "string"
+					},
+					{
+						"name": "_productNotes",
+						"type": "string"
+					},
+					{
+						"name": "_price",
+						"type": "uint256"
+					}
+				],
+				"name": "produceItemByCarParts_Manufacturer",
+				"outputs": [],
+				"payable": false,
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"constant": false,
+				"inputs": [
+					{
+						"name": "_upc",
+						"type": "uint256"
+					},
+					{
+						"name": "_price",
+						"type": "uint256"
+					}
+				],
+				"name": "sellItemByRetailer",
+				"outputs": [],
+				"payable": false,
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"constant": false,
+				"inputs": [
+					{
+						"name": "_upc",
+						"type": "uint256"
+					}
+				],
+				"name": "processedItemByCarParts_Distributor",
+				"outputs": [],
+				"payable": false,
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"constant": true,
+				"inputs": [
+					{
+						"name": "account",
+						"type": "address"
+					}
+				],
+				"name": "isRetailer",
+				"outputs": [
+					{
+						"name": "",
+						"type": "bool"
+					}
+				],
+				"payable": false,
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"constant": true,
+				"inputs": [
+					{
+						"name": "_upc",
+						"type": "uint256"
+					}
+				],
+				"name": "fetchItemBufferTwo",
+				"outputs": [
+					{
+						"name": "itemSKU",
+						"type": "uint256"
+					},
+					{
+						"name": "itemUPC",
+						"type": "uint256"
+					},
+					{
+						"name": "productID",
+						"type": "uint256"
+					},
+					{
+						"name": "productNotes",
+						"type": "string"
+					},
+					{
+						"name": "productPrice",
+						"type": "uint256"
+					},
+					{
+						"name": "productDate",
+						"type": "uint256"
+					},
+					{
+						"name": "itemState",
+						"type": "uint8"
+					},
+					{
+						"name": "CarParts_distributorID",
+						"type": "address"
+					},
+					{
+						"name": "retailerID",
+						"type": "address"
+					},
+					{
+						"name": "customerID",
+						"type": "address"
+					}
+				],
+				"payable": false,
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"constant": false,
+				"inputs": [],
+				"name": "renounceOwnership",
+				"outputs": [],
+				"payable": false,
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"constant": true,
+				"inputs": [
+					{
+						"name": "_upc",
+						"type": "uint256"
+					}
+				],
+				"name": "fetchItemBufferOne",
+				"outputs": [
+					{
+						"name": "itemSKU",
+						"type": "uint256"
+					},
+					{
+						"name": "itemUPC",
+						"type": "uint256"
+					},
+					{
+						"name": "ownerID",
+						"type": "address"
+					},
+					{
+						"name": "originCarParts_ManufacturerID",
+						"type": "address"
+					},
+					{
+						"name": "originFactoryName",
+						"type": "string"
+					},
+					{
+						"name": "originFactoryInformation",
+						"type": "string"
+					},
+					{
+						"name": "originFactoryLatitude",
+						"type": "string"
+					},
+					{
+						"name": "originFactoryLongitude",
+						"type": "string"
+					},
+					{
+						"name": "productDate",
+						"type": "uint256"
+					}
+				],
+				"payable": false,
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"constant": false,
+				"inputs": [],
+				"name": "renounceCarParts_Distributor",
+				"outputs": [],
+				"payable": false,
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"constant": false,
+				"inputs": [
+					{
+						"name": "account",
+						"type": "address"
+					}
+				],
+				"name": "addRetailer",
+				"outputs": [],
+				"payable": false,
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"constant": true,
+				"inputs": [],
+				"name": "isOwner",
+				"outputs": [
+					{
+						"name": "",
+						"type": "bool"
+					}
+				],
+				"payable": false,
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"constant": false,
+				"inputs": [
+					{
+						"name": "_upc",
+						"type": "uint256"
+					}
+				],
+				"name": "shippedItemByCarParts_Distributor",
+				"outputs": [],
+				"payable": false,
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"constant": false,
+				"inputs": [
+					{
+						"name": "_upc",
+						"type": "uint256"
+					},
+					{
+						"name": "_price",
+						"type": "uint256"
+					}
+				],
+				"name": "sellItemByCarParts_Distributor",
+				"outputs": [],
+				"payable": false,
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"constant": false,
+				"inputs": [
+					{
+						"name": "_upc",
+						"type": "uint256"
+					}
+				],
+				"name": "purchaseItemByCustomer",
+				"outputs": [],
+				"payable": true,
+				"stateMutability": "payable",
+				"type": "function"
+			},
+			{
+				"constant": false,
+				"inputs": [
+					{
+						"name": "_upc",
+						"type": "uint256"
+					}
+				],
+				"name": "purchaseItemByCarParts_Distributor",
+				"outputs": [],
+				"payable": true,
+				"stateMutability": "payable",
+				"type": "function"
+			},
+			{
+				"constant": false,
+				"inputs": [
+					{
+						"name": "account",
+						"type": "address"
+					}
+				],
+				"name": "addCustomer",
+				"outputs": [],
+				"payable": false,
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"constant": false,
+				"inputs": [
+					{
+						"name": "account",
+						"type": "address"
+					}
+				],
+				"name": "renounceCustomer",
+				"outputs": [],
+				"payable": false,
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"constant": true,
+				"inputs": [
+					{
+						"name": "account",
+						"type": "address"
+					}
+				],
+				"name": "isCarParts_Manufacturer",
+				"outputs": [
+					{
+						"name": "",
+						"type": "bool"
+					}
+				],
+				"payable": false,
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"constant": false,
+				"inputs": [
+					{
+						"name": "_upc",
+						"type": "uint256"
+					}
+				],
+				"name": "packageItemByCarParts_Distributor",
+				"outputs": [],
+				"payable": false,
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"constant": false,
+				"inputs": [],
+				"name": "renounceRetailer",
+				"outputs": [],
+				"payable": false,
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"constant": true,
+				"inputs": [],
+				"name": "ownerLookup",
+				"outputs": [
+					{
+						"name": "",
+						"type": "address"
+					}
+				],
+				"payable": false,
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"constant": true,
+				"inputs": [
+					{
+						"name": "account",
+						"type": "address"
+					}
+				],
+				"name": "isCarParts_Distributor",
+				"outputs": [
+					{
+						"name": "",
+						"type": "bool"
+					}
+				],
+				"payable": false,
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"constant": false,
+				"inputs": [
+					{
+						"name": "newOwner",
+						"type": "address"
+					}
+				],
+				"name": "transferOwnership",
+				"outputs": [],
+				"payable": false,
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"constant": false,
+				"inputs": [],
+				"name": "renounceCarParts_Manufacturer",
+				"outputs": [],
+				"payable": false,
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"payable": true,
+				"stateMutability": "payable",
+				"type": "constructor"
+			},
+			{
+				"anonymous": false,
+				"inputs": [
+					{
+						"indexed": false,
+						"name": "upc",
+						"type": "uint256"
+					}
+				],
+				"name": "ProduceByCarParts_Manufacturer",
+				"type": "event"
+			},
+			{
+				"anonymous": false,
+				"inputs": [
+					{
+						"indexed": false,
+						"name": "upc",
+						"type": "uint256"
+					}
+				],
+				"name": "ForSaleByCarParts_Manufacturer",
+				"type": "event"
+			},
+			{
+				"anonymous": false,
+				"inputs": [
+					{
+						"indexed": false,
+						"name": "upc",
+						"type": "uint256"
+					}
+				],
+				"name": "PurchasedByCarParts_Distributor",
+				"type": "event"
+			},
+			{
+				"anonymous": false,
+				"inputs": [
+					{
+						"indexed": false,
+						"name": "upc",
+						"type": "uint256"
+					}
+				],
+				"name": "ShippedByCarParts_Manufacturer",
+				"type": "event"
+			},
+			{
+				"anonymous": false,
+				"inputs": [
+					{
+						"indexed": false,
+						"name": "upc",
+						"type": "uint256"
+					}
+				],
+				"name": "ReceivedByCarParts_Distributor",
+				"type": "event"
+			},
+			{
+				"anonymous": false,
+				"inputs": [
+					{
+						"indexed": false,
+						"name": "upc",
+						"type": "uint256"
+					}
+				],
+				"name": "ProcessedByCarParts_Distributor",
+				"type": "event"
+			},
+			{
+				"anonymous": false,
+				"inputs": [
+					{
+						"indexed": false,
+						"name": "upc",
+						"type": "uint256"
+					}
+				],
+				"name": "PackagedByCarParts_Distributor",
+				"type": "event"
+			},
+			{
+				"anonymous": false,
+				"inputs": [
+					{
+						"indexed": false,
+						"name": "upc",
+						"type": "uint256"
+					}
+				],
+				"name": "ForSaleByCarParts_Distributor",
+				"type": "event"
+			},
+			{
+				"anonymous": false,
+				"inputs": [
+					{
+						"indexed": false,
+						"name": "upc",
+						"type": "uint256"
+					}
+				],
+				"name": "PurchasedByRetailer",
+				"type": "event"
+			},
+			{
+				"anonymous": false,
+				"inputs": [
+					{
+						"indexed": false,
+						"name": "upc",
+						"type": "uint256"
+					}
+				],
+				"name": "ShippedByCarParts_Distributor",
+				"type": "event"
+			},
+			{
+				"anonymous": false,
+				"inputs": [
+					{
+						"indexed": false,
+						"name": "upc",
+						"type": "uint256"
+					}
+				],
+				"name": "ReceivedByRetailer",
+				"type": "event"
+			},
+			{
+				"anonymous": false,
+				"inputs": [
+					{
+						"indexed": false,
+						"name": "upc",
+						"type": "uint256"
+					}
+				],
+				"name": "ForSaleByRetailer",
+				"type": "event"
+			},
+			{
+				"anonymous": false,
+				"inputs": [
+					{
+						"indexed": false,
+						"name": "upc",
+						"type": "uint256"
+					}
+				],
+				"name": "PurchasedByCustomer",
+				"type": "event"
+			},
+			{
+				"anonymous": false,
+				"inputs": [
+					{
+						"indexed": true,
+						"name": "account",
+						"type": "address"
+					}
+				],
+				"name": "CustomerAdded",
+				"type": "event"
+			},
+			{
+				"anonymous": false,
+				"inputs": [
+					{
+						"indexed": true,
+						"name": "account",
+						"type": "address"
+					}
+				],
+				"name": "CustomerRemoved",
+				"type": "event"
+			},
+			{
+				"anonymous": false,
+				"inputs": [
+					{
+						"indexed": true,
+						"name": "account",
+						"type": "address"
+					}
+				],
+				"name": "RetailerAdded",
+				"type": "event"
+			},
+			{
+				"anonymous": false,
+				"inputs": [
+					{
+						"indexed": true,
+						"name": "account",
+						"type": "address"
+					}
+				],
+				"name": "RetailerRemoved",
+				"type": "event"
+			},
+			{
+				"anonymous": false,
+				"inputs": [
+					{
+						"indexed": true,
+						"name": "account",
+						"type": "address"
+					}
+				],
+				"name": "CarParts_DistributorAdded",
+				"type": "event"
+			},
+			{
+				"anonymous": false,
+				"inputs": [
+					{
+						"indexed": true,
+						"name": "account",
+						"type": "address"
+					}
+				],
+				"name": "CarParts_DistributorRemoved",
+				"type": "event"
+			},
+			{
+				"anonymous": false,
+				"inputs": [
+					{
+						"indexed": true,
+						"name": "account",
+						"type": "address"
+					}
+				],
+				"name": "CarParts_ManufacturerAdded",
+				"type": "event"
+			},
+			{
+				"anonymous": false,
+				"inputs": [
+					{
+						"indexed": true,
+						"name": "account",
+						"type": "address"
+					}
+				],
+				"name": "CarParts_ManufacturerRemoved",
+				"type": "event"
+			},
+			{
+				"anonymous": false,
+				"inputs": [
+					{
+						"indexed": true,
+						"name": "oldOwner",
+						"type": "address"
+					},
+					{
+						"indexed": true,
+						"name": "newOwner",
+						"type": "address"
+					}
+				],
+				"name": "TransferOwnership",
+				"type": "event"
+			}
+		],
+		"devdoc": {
+			"methods": {}
+		},
+		"userdoc": {
+			"methods": {
+				"isOwner()": {
+					"notice": "Check if the calling address is the owner of the contract"
+				},
+				"ownerLookup()": {
+					"notice": "Look up the address of the owner"
+				},
+				"renounceOwnership()": {
+					"notice": "Define a function to renounce ownerhip"
+				},
+				"transferOwnership(address)": {
+					"notice": "Define a public function to transfer ownership"
+				}
+			}
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"contracts/SCbase/SupplyChain.sol": "SupplyChain"
+		},
+		"evmVersion": "byzantium",
+		"libraries": {},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"contracts/SCaccesscontrol/CarParts_DistributorRole.sol": {
+			"keccak256": "0xa3ce31630edb1ba0f299a8b8aa21af038e13b3b7824cdd5473f92b015f70c50a",
+			"urls": [
+				"bzzr://65f3d89ee024ed14ef4c5b285f7c9379dfe83a2a10d40d4ae4180dcc27e6f96a"
+			]
+		},
+		"contracts/SCaccesscontrol/CarParts_ManufacturerRole.sol": {
+			"keccak256": "0x6355842c9af3c79e90ed879b39b167dd133e82a47a17d20c90913cc1a7b74e33",
+			"urls": [
+				"bzzr://1d0cb76262174e90426c8acbc2e635d8203e841faa14084b99d4b8507c9a7d5f"
+			]
+		},
+		"contracts/SCaccesscontrol/CustomerRole.sol": {
+			"keccak256": "0x2ff7d5e6cce82cd88c3ca1c86f03cc8f6fe60c61568ae70c640e45208d65f340",
+			"urls": [
+				"bzzr://27ff5f7e21c5e98aa0c1dd5ec4b513eed7c2246b1e9736de4cece8e4e885fd67"
+			]
+		},
+		"contracts/SCaccesscontrol/RetailerRole.sol": {
+			"keccak256": "0x9327d56f50bda6c6b04df97ded7f3ac27f82e3c94fcb1f25022cd2803764beec",
+			"urls": [
+				"bzzr://dafd6dd907b9197c8a8b6793d526f7b83533f8e68cfa026bf1e9bbbdda35e9c0"
+			]
+		},
+		"contracts/SCaccesscontrol/Roles.sol": {
+			"keccak256": "0x3e82251c67c17585b2356f3a16c6367bf0082d152d878b46a6a060e9febdf457",
+			"urls": [
+				"bzzr://b6b176abc4c65d1b1190c79f225948f71b8f3df1d012e09700938c2c556d408e"
+			]
+		},
+		"contracts/SCbase/SupplyChain.sol": {
+			"keccak256": "0x9792f84e6754487dcdba4508b382899fe936c8219d8020642c847262515319e7",
+			"urls": [
+				"bzzr://b6a263617a01eaeefe9ca3b56e83bb0536869d05ae8ae7e1cce8ab52bb913a37"
+			]
+		},
+		"contracts/SCcore/Ownable.sol": {
+			"keccak256": "0x0cb72626100e2ebbc40044ceb94796aea293960a370ad294d4cc3e890c91dd3f",
+			"urls": [
+				"bzzr://53648eada5ffcd09f8687370ce2905309b79fa116381a9e2f7cfb018a1c80c92"
+			]
+		}
+	},
+	"version": 1
+}
